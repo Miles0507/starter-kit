@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Light/Roboto-Light.eot');
+  src: url('../fonts/Light/Roboto-Light.woff') format('woff'),
+   url('../fonts/Light/Roboto-Light.ttf') format('truetype'),
+   url('../fonts/Light/Roboto-Light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Regular/Roboto-Regular.eot');
+  src: url('../fonts/Regular/Roboto-Regular.woff') format('woff'),
+   url('../fonts/Regular/Roboto-Regular.ttf') format('truetype'),
+   url('../fonts/Regular/Roboto-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../fonts/Medium/Roboto-Medium.eot');
+  src: url('../fonts/Medium/Roboto-Medium.woff') format('woff'),
+   url('../fonts/Medium/Roboto-Medium.ttf') format('truetype'),
+   url('../fonts/Medium/Roboto-Medium.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Bold/Roboto-Bold.eot');
+  src: url('../fonts/Bold/Roboto-Bold.woff') format('woff'),
+   url('../fonts/Bold/Roboto-Bold.ttf') format('truetype'),
+   url('../fonts/Bold/Roboto-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto-Regular', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #fff;
+  /* 使用具有回弹效果的滚动 */
+  -webkit-overflow-scrolling: touch;
+  /* 以下两项 normalize.css 里面已经修正 */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  border: 0;
+  text-decoration: none;
+}
+
+textarea,
+select,
+input {
+  appearance:none;
+  -webkit-appearance: none;
+  outline: 0;
+}
+
+a,
+button,
+textarea,
+select,
+input {
+  font-size: 12px;
+  /* 去掉点击链接时默认的灰色半透明覆盖层(iOS)或者虚框(Android) */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+::-webkit-scrollbar {
+  width:0;
+  height:0;
+  background: #fff;
+}
+
+input::-webkit-input-placeholder {
+  font-weight: normal;
+  color: #ccc;
+}

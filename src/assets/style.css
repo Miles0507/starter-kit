@@ -1,0 +1,17 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.hello {
+	font-family: 'Roboto-Regular';
+	color: blue;
+	background: #aaa;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
