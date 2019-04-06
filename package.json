@@ -10,7 +10,8 @@
     "dashboard": "webpack-dashboard -- webpack-dev-server --open --env.NODE_ENV=development --config ./build/webpack.dev.js",
     "build": "webpack --env.NODE_ENV=production --progress --config ./build/webpack.prod.js",
     "watch": "webpack --watch",
-    "lint": "eslint --ext .js,.jsx src/"
+    "lintjs": "eslint --ext .js,.jsx src/",
+    "lintcss": "stylelint 'src/**/*.css'"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
@@ -25,6 +26,8 @@
     "mini-css-extract-plugin": "^0.4.0",
     "optimize-css-assets-webpack-plugin": "^4.0.0",
     "style-loader": "^0.20.3",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0",
     "uglifyjs-webpack-plugin": "^1.2.4",
     "url-loader": "^1.0.1",
     "webpack": "^4.5.0",
