@@ -2,8 +2,8 @@ import _ from 'lodash'
 import 'normalize.css'
 import './assets/css/reset.css'
 import './assets/style.css'
-import './assets/style2.css'
-import Icon from './assets/images/love.png'
+import 'assets/style2.css'
+import Icon from 'assets/images/love.png'
 import printMe from './print'
 
 function component() {

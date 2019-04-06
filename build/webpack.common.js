@@ -1,12 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const path = require('path')
-// const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-// const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = (env) => {
-  const isProduction = env.NODE_ENV === 'production'
+  const isProd = env.NODE_ENV === 'production'
 
   return {
     entry: {
@@ -15,13 +13,13 @@ module.exports = (env) => {
     },
     output: {
       filename: '[name].bundle.[hash].js',
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, '../public'),
       publicPath: '/'
     },
     resolve: {
       extensions: ['.js', '.json', '.jsx', '.css'],
       alias: {
-        assets: path.resolve(__dirname, 'src/assets')
+        assets: path.resolve(__dirname, '../src/assets')
       }
     },
     plugins: [
@@ -57,7 +55,7 @@ module.exports = (env) => {
         {
           test: /\.css$/,
           use: [
-            isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
+            isProd ? MiniCssExtractPlugin.loader : 'style-loader',
             'css-loader',
           ]
         },
@@ -65,7 +63,7 @@ module.exports = (env) => {
           test: /\.(png|svg|jpg|gif)$/,
           use: [
             {
-              loader: isProduction ? 'url-loader' : 'file-loader',
+              loader: isProd ? 'url-loader' : 'file-loader',
               options: {
                 limit: 8192,
                 name: 'images/[name].[hash].[ext]'
