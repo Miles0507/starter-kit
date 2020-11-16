@@ -1,11 +1,10 @@
 .hello {
   font-family: 'Roboto-Regular', sans-serif;
-  color: blue;
+  color: #222;
 }
 
 .hello2 {
   font-size: 100px;
-  color: #fff;
 }
 
 img {

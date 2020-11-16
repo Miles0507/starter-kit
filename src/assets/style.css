@@ -7,8 +7,7 @@ body {
 
 .hello {
   font-family: 'Roboto-Regular', sans-serif;
-  color: blue;
-  background: #aaa;
+  color: red;
   width: 100%;
   height: 100%;
   display: flex;

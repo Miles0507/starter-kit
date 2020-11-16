@@ -11,7 +11,7 @@ function component() {
   const input = document.createElement('input')
 
   // Lodash, now imported by this script
-  element.innerHTML = _.join(['Starter Kit'], ' ')
+  element.innerHTML = _.join(['Enjoy'], ' ')
   element.classList.add('hello')
   element.classList.add('hello2')
 
